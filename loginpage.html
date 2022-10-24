@@ -23,9 +23,14 @@
         font-family: "Roboto", sans-serif;
       }
       form {
-        background: gold;
-        width: 300px;
-        height: 420px;
+        text-align: center;
+      }
+      .row {
+        margin-bottom: 2.5rem;
+      }
+      .title {
+        font-size: 3.1rem;
+        color: rgb(53, 75, 54);
       }
       .wrapper {
         display: flex;
@@ -49,18 +54,45 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: rgb(107, 159, 104);
       }
       .right {
         background: url(https://images.unsplash.com/photo-1666167494533-73460f339cf5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
         background-size: cover;
         background-position: center;
       }
+      .input {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 8px;
+        border: 1px solid gray;
+        background: bisque;
+      }
+      .button {
+        background: rgba(67, 44, 44, 0.427);
+        color: bisque;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        font-size: 1.5rem;
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
       <div class="left">
-        <form></form>
+        <form>
+          <h1 class="title">Sing in now<Inp></Inp></h1>
+          <div class="row">
+            <input class="input" type="text" placeholder="E-mai" />
+          </div>
+          <div class="row">
+            <input class="input" type="password" placeholder="password" />
+          </div>
+          <div class="row">
+            <button class="button">Go!</button>
+          </div>
+        </form>
       </div>
       <div class="right"></div>
     </div>
