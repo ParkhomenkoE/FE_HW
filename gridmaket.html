@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gridmaket</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: rgb(7, 76, 119);
+      }
+      html,
+      body,
+      .wrapper {
+        height: 100%;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1f);
+        grid-template-rows: repeat(4, 1f);
+        grid-template-areas:
+          "left top top rigthtop"
+          "left centerlefttop centerrigthtop rigth"
+          "left centerleft centerrigth rigth";
+        gap: 10px;
+      }
+
+      .left {
+        grid-area: left;
+        background: rgb(9, 226, 103);
+      }
+      .top {
+        grid-area: top;
+        background: rgb(9, 226, 103);
+      }
+      .rigthtop {
+        grid-area: rigthtop;
+        background: rgb(222, 55, 55);
+      }
+      .rigth {
+        grid-area: rigth;
+        background: rgb(9, 226, 103);
+      }
+      .centerlefttop {
+        grid-area: centerlefttop;
+        background: yellow;
+      }
+      .centerrigthtop {
+        grid-area: centerrigthtop;
+        background: rgb(222, 55, 55);
+      }
+      .centerleft {
+        grid-area: centerleft;
+        background: rgb(222, 55, 55);
+      }
+      .centerrigth {
+        grid-area: centerrigth;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left"></div>
+      <div class="top"></div>
+      <div class="rigthtop"></div>
+      <div class="rigth"></div>
+      <div class="centerlefttop"></div>
+      <div class="centerrigthtop"></div>
+      <div class="centerleft"></div>
+      <div class="centerrigth"></div>
+    </div>
+  </body>
+</html>
