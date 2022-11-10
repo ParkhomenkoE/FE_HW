@@ -20,12 +20,13 @@
 
       .wrapper {
         display: grid;
-        grid-template-columns: repeat(2, 1f);
-        grid-template-rows: repeat(3, 1f);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         grid-template-areas:
-          "header header"
-          "side-bar main"
-          "footer footer";
+          "header header header"
+          "side-bar main main"
+          "side-bar main main"
+          "footer footer footer";
         gap: 10px;
       }
       .wrapper > div {
